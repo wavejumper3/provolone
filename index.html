@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="What exactly is Provolone? find out on this highly informative website!">
+    <meta name="keywords" content="provolone, cheese, information, info">
+    <title>Provolone Info</title>
+    <style>
+img {
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 300px;
+  top: 50%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+
+  transform: translate(-50%, -50%); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+}
+    </style>
+  </head>
+<body>
+		<button onclick='act()'>Give him PROVOLONE</button>
+		<br />
+		<img id="img" src="https://i.kym-cdn.com/photos/images/newsfeed/002/069/850/076.jpg">
+<script>
+var element = document.createElement("img");
+element.src = "https://i.kym-cdn.com/photos/images/newsfeed/002/069/848/829.jpg";
+document.body.appendChild(element);
+element.style.opacity = 0;
+element.style.transition = "opacity 1s";
+
+function act() {
+  element.style.opacity = 1;
+var paragraph = document.getElementById("p");
+var text = document.createTextNode("PROVOLONE CHEESE IS THE BEST CHEESE!!!!");
+paragraph.appendChild(text);
+paragraph.appendChild(document.createElement("br"));
+document.body.style.backgroundImage = "url('https://images.albertsons-media.com/is/image/ABS/960152626?$ng-ecom-pdp-desktop$&defaultImage=Not_Available')";
+}
+	</script>
+	<p id="p"></p>
+</body>
+</html>
